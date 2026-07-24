@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffe8e8,#ffd6d6,#ffe6d9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    width:1100px;
+    background:#fff;
+    display:flex;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.left-panel{
+    width:40%;
+    background:linear-gradient(180deg,#f7b2bd,#ffd8cc);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    text-align:center;
+}
+
+.left-panel h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.left-panel p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.left-panel img{
+    width:230px;
+    margin:20px 0;
+}
+
+.left-panel h3{
+    font-weight:500;
+}
+
+.right-panel{
+    width:60%;
+    padding:40px;
+}
+
+.right-panel h2{
+    text-align:center;
+    color:#d45d79;
+    margin-bottom:30px;
+}
+
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.input-box input,
+.input-box select,
+textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #f4b4c3;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.input-box input:focus,
+.input-box select:focus,
+textarea:focus{
+    border-color:#f48fb1;
+    box-shadow:0 0 8px rgba(244,143,177,0.5);
+}
+
+textarea{
+    height:90px;
+    resize:none;
+}
+
+.full-width{
+    grid-column:1/3;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#f48fb1;
+    color:white;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ec407a;
+}
+
+.login{
+    text-align:center;
+    margin-top:10px;
+}
+
+.login a{
+    text-decoration:none;
+    color:#d81b60;
+    font-weight:bold;
+}
+
+.logo-box{
+    background:#ffffff;
+    padding:15px;
+    border-radius:20px;
+    margin:25px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.logo{
+    width:150px;
+    height:150px;
+    display:block;
+    margin:auto;
+}
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .left-panel,
+    .right-panel{
+        width:100%;
+    }
+
+    form{
+        grid-template-columns:1fr;
+    }
+
+    .full-width{
+        grid-column:1;
+    }
+
+}

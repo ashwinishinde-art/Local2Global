@@ -1,0 +1,764 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',Arial,sans-serif;
+}
+
+
+body{
+
+    background:#faf7ef;
+    color:#333;
+
+}
+
+
+:root{
+
+    --green:#2e7d32;
+    --dark:#1b5e20;
+    --gold:#d89b18;
+    --cream:#fff3d6;
+    --white:#ffffff;
+
+}
+
+
+
+/* HEADER */
+
+
+header{
+
+    height:85px;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-around;
+
+    padding:15px 30px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:var(--green);
+
+}
+
+
+
+.logo:hover{
+
+    color:var(--gold);
+
+}
+
+
+
+
+.search{
+
+    display:flex;
+
+}
+
+
+
+.search input{
+
+    width:420px;
+
+    padding:15px 20px;
+
+    border:1px solid #ddd;
+
+    border-radius:30px 0 0 30px;
+
+    outline:none;
+
+}
+
+
+
+.search button{
+
+    width:60px;
+
+    background:var(--green);
+
+    border:none;
+
+    color:white;
+
+    border-radius:0 30px 30px 0;
+
+    cursor:pointer;
+
+}
+
+
+
+.search button:hover{
+
+    background:var(--dark);
+
+}
+
+
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    margin:0 10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:var(--green);
+
+}
+
+
+
+
+
+/* CATEGORY */
+
+
+.categories{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    background:white;
+
+    padding:25px;
+
+}
+
+
+
+.categories div{
+
+    padding:14px 25px;
+
+    border-radius:30px;
+
+    background:var(--cream);
+
+    color:var(--green);
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.categories div:hover{
+
+    background:var(--green);
+
+    color:white;
+
+    transform:translateY(-6px);
+
+}
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+    margin:35px;
+
+    padding:55px;
+
+    min-height:450px;
+
+    border-radius:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+
+    url("img.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+}
+
+
+
+.hero-text{
+
+    width:55%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:55px;
+
+    line-height:1.1;
+
+}
+
+
+
+.hero p{
+
+    margin:25px 0;
+
+    font-size:20px;
+
+    line-height:30px;
+
+}
+
+
+
+.hero button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--green);
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-right:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.hero button:hover{
+
+    background:var(--gold);
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.hero .seller{
+
+    background:var(--gold);
+
+}
+
+
+
+.hero img{
+
+    width:420px;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+
+    transition:.4s;
+
+}
+
+
+
+.hero img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* MAIN */
+
+
+.main{
+
+    display:flex;
+
+    gap:30px;
+
+    padding:40px;
+
+}
+
+
+
+aside{
+
+    width:260px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+
+
+aside h2{
+
+    color:var(--green);
+
+}
+
+
+
+aside li{
+
+    list-style:none;
+
+    padding:15px 5px;
+
+    border-bottom:1px solid #eee;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+
+
+aside li:hover{
+
+    color:var(--green);
+
+    padding-left:15px;
+
+}
+
+
+
+
+
+/* PRODUCTS */
+
+
+.products{
+
+    flex:1;
+
+}
+
+
+
+.products h1{
+
+    color:var(--green);
+
+    margin-bottom:25px;
+
+}
+
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+
+
+.card img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+}
+
+
+
+.card h3,
+.card p,
+.card h2{
+
+    padding:10px 15px;
+
+}
+
+
+
+.card h2{
+
+    color:var(--green);
+
+}
+
+
+
+.card button{
+
+    width:90%;
+
+    margin:15px 5%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--green);
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+.card button:hover{
+
+    background:var(--gold);
+
+}
+
+
+
+
+
+
+
+
+
+/* SELLER */
+
+
+.seller-section{
+
+    background:var(--green);
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px;
+
+}
+
+
+
+.seller-section h1{
+
+    font-size:42px;
+
+}
+
+
+
+.seller-section button{
+
+    margin-top:25px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--gold);
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* STORIES */
+
+
+.stories{
+
+    padding:50px;
+
+}
+
+
+
+.stories h1{
+
+    text-align:center;
+
+    color:var(--green);
+
+}
+
+
+
+.story{
+
+    background:white;
+
+    padding:25px;
+
+    margin:20px;
+
+    border-radius:20px;
+
+    border-left:6px solid var(--gold);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+
+.story:hover{
+
+    transform:translateX(10px);
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    padding:50px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+}
+
+
+
+footer h2{
+
+    color:var(--gold);
+
+}
+
+
+
+footer p{
+
+    margin-top:10px;
+
+    color:#ccc;
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:1000px){
+
+
+header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    gap:15px;
+
+}
+
+
+.hero{
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+
+.hero-text{
+
+    width:100%;
+
+}
+
+
+.main{
+
+    flex-direction:column;
+
+}
+
+
+.cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.hero h1{
+
+    font-size:35px;
+
+}
+
+
+.hero img{
+
+    width:100%;
+
+}
+
+
+.search input{
+
+    width:250px;
+
+}
+
+
+footer{
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+
+}

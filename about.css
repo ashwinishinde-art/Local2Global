@@ -1,0 +1,192 @@
+/* Google Font */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f6fbf6;
+    color:#333;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    width:90%;
+    margin:30px auto;
+    background:linear-gradient(135deg,#2E7D32,#66BB6A);
+    border-radius:25px;
+    padding:70px 30px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    color:white;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:650px;
+    margin:auto;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+}
+
+.one{
+    width:220px;
+    height:220px;
+    top:-60px;
+    left:-60px;
+}
+
+.two{
+    width:180px;
+    height:180px;
+    right:-40px;
+    bottom:-40px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+
+
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    color:#2E7D32;
+    margin-bottom:15px;
+    font-size:35px;
+}
+
+.about-text p{
+    line-height:30px;
+    font-size:17px;
+}
+
+/* ================= MISSION ================= */
+
+.mission{
+    width:90%;
+    margin:20px auto 50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:45px;
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:12px;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+    width:90%;
+    margin:30px auto 60px;
+}
+
+.features h2{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.feature-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.box{
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.box:hover{
+    background:#2E7D32;
+    color:white;
+    transform:translateY(-8px);
+}
+
+.box:hover i{
+    color:white;
+}
+
+.box i{
+    font-size:38px;
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.about{
+    flex-direction:column;
+}
+
+.about-text{
+    text-align:center;
+}
+
+.features h2{
+    font-size:28px;
+}
+
+}
